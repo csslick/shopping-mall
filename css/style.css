@@ -144,6 +144,7 @@ body {
   width: 224px;
   float: left;
   margin-right: 20px;
+  padding-bottom: 20px;
 }
 #top_seller ul > li:last-child{ 
   margin-right: 0;
@@ -178,4 +179,44 @@ body {
 
 #top_seller ul > li .sale_price {
 
+}
+
+
+/* 브랜드 추천 */
+#brand {
+  text-align: center;
+  padding: 50px 0; 
+  overflow: hidden;
+}
+#brand h2 {
+  margin-bottom: 50px;
+  font-size: 24px;  
+}
+#brand .container > ul > li {
+  outline: 1px solid green;
+  width: 386.66px;
+  height: 465px;
+  float: left;
+  margin-right: 20px;
+  padding-bottom: 20px; 
+}
+#brand ul > li:last-child{ 
+  margin-right: 0;
+}
+
+/* 브랜드 목록 배경이미지 */
+#brand > .container > ul > li:nth-child(1) {
+  /* 이미지 높이값: 340px */
+  background-image: url("http://placeimg.com/387/340/1");
+  background-repeat: no-repeat;
+}
+#brand > .container > ul > li:nth-child(2) {
+  /* 이미지 높이값: 340px */
+  background-image: url("http://placeimg.com/387/340/2");
+  background-repeat: no-repeat;
+}
+#brand > .container > ul > li:nth-child(3) {
+  /* 이미지 높이값: 340px */
+  background-image: url("http://placeimg.com/387/340/3");
+  background-repeat: no-repeat;
 }
