@@ -4,26 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Shopping Mall</title>
+  <title>B 몰 온라인 스토어</title>
+  <!-- 웹폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!-- FontAwesome(폰트 아이콘) -->
   <script src="https://kit.fontawesome.com/42bc809b80.js" crossorigin="anonymous"></script>
+  <!-- bx slider CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bx slider JS -->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- 사용자 자바스크립트 -->
+  <script src="js/main.js"></script>
 </head>
 <body>
   <header id="main_header">
     <div class="container">
-      <h1>TheAmall</h1>
-      <!-- 540 x 55 -->
-        <form action="" class="search-box">
-        <input type="text" placeholder="NEW! 코듀로이 스커트 출시 이벤트">
-        <button type="submit"><i class="fas fa-search"></i></button>
+      <h1>
+        <a href="./index.html">
+          <img src="images/h1_logo_bmall.png" alt="B 몰">
+        </a>
+      </h1>
+      <!-- 검색창 -->
+      <form id="search_box">
+        <input 
+          type="text"
+          placeholder="NEW! 코듀로이 스커트 출시"
+        >
+        <button type="submit">
+          <i class="fas fa-search"></i>
+        </button>
       </form>
-    </div><!-- container -->
+
+      <!-- 유틸리티 메뉴 -->
+      <nav id="util_menu">
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-truck"></i></a>
+        <a href="#"><i class="fas fa-heart"></i></a>
+      </nav>
+    </div><!-- end container-->
   </header>
+
+  <!-- 메인 GNB -->
   <nav id="main_gnb">
     <div class="container">
       <button id="category_btn">
-        <i class="fas fa-bars"></i>카테고리
+        <i class="fas fa-bars"></i>
+        <span>카테고리</span>
       </button>
+
       <ul>
         <li><a href="#">특가존</a></li>
         <li><a href="#">랭킹</a></li>
@@ -33,14 +65,81 @@
         <li><a href="#">맴버십</a></li>
         <li><a href="#">매거진</a></li>
         <li><a href="#">핫딜</a></li>
-      </ul>   
-    </div>  
+      </ul>
+    </div><!-- end container -->
   </nav>
 
+  <!-- 메인 배너 -->
   <section id="main_banner">
-    <!-- <img src="http://placehold.it/1920x400/f80" alt=""> -->
-    <!-- <img src="http://placeimg.com/1920/400/a" alt=""> -->
-    <img src="./banner1.jpg" alt="banner">
+    <div class="bx-slider">
+      <img class="img_responsive1" src="images/main_banner01.jpg" alt="1" title="여기에 배너 설명글을 작성">
+      <img class="img_responsive1" src="http://placeimg.com/1920/400/2" alt="2">
+      <img class="img_responsive1" src="http://placeimg.com/1920/400/3" alt="3">
+    </div>
   </section>
+
+  <!-- 메인 콘텐츠 -->
+  <section id="top_seller">
+    <div class="container"><!-- end container-->
+      <h2>TOP top_seller</h2>
+      <ul class="item_list">
+        <li>
+          <a href="#">
+            <!-- 225 x 323 -->
+            <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- 225 x 323 -->
+            <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- 225 x 323 -->
+            <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- 225 x 323 -->
+            <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- 225 x 323 -->
+            <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
+            <span class="title">EGOIST</span>
+            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
+            <del class="origin_price">368,000원</del>
+            <ins class="sale_price"><strong>214,800원</strong></ins>
+          </a>
+        </li>
+
+
+
+      </ul>
+    </div><!-- end container-->
+  </section>
+
+
 </body>
 </html>

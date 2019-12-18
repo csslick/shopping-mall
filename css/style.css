@@ -1,3 +1,4 @@
+/* style.css */
 *{
   margin: 0; padding: 0;
   box-sizing: border-box;
@@ -6,100 +7,175 @@
 ul{ list-style-type: none;}
 a{
   text-decoration: none;
-  color: #333;
+  color: #444;
 }
+body {
+  color: #444;
+  font-size: 100%;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.img_responsive{ width: 100%;}
 
-body{
-  font-size: 16px;
-  color: #333;
-}
-.container{
+/* 기본 틀 1200px */
+.container {
   position: relative;
-  width: 1200px; height: 100%;
+  width: 1200px;
+  height: 100%;
   margin: 0 auto;
-  /* outline: 1px solid red; */
-}
-input, button {
-  border: none;
-  padding: 5px;
-  font-size: 14px;
-  color: #666;
+  outline: 1px solid red;
 }
 
-#main_header{
-  position: relative;
+
+/* 헤더 */
+#main_header {
   height: 126px;
+  /* background: #ccc; */
   text-align: center;
-  outline: 1px solid red;
 }
 #main_header h1 {
   position: absolute;
-  left: 20px; top: 40px;
+  left: 20px; top: 37px;
 }
-.search-box{
+#main_header #util_menu{
+  position: absolute;
+  right: 20px; top: 53px;
+  font-size: 24px;
+}
+#main_header #util_menu > a {
+  margin-left: 10px;
+}
+
+/* 검색창 */
+#search_box {
+  width: 540px; height: 55px;
   display: inline-block;
   border: 1px solid #999;
-  width: 540px; height: 55px;
-  margin-top: 40px;
   text-align: left;
-  /* overflow: hidden; */
+  margin-top: 40px;
 }
-.search-box input{
-  width: 450px;
-  padding-top: 20px;
-  padding-left: 20px;
+#search_box input, 
+#search_box button {
+  font-size: 14px;
+  color: #444;
+  border: none;
 }
-.search-box button{ 
+#search_box button{ 
+  cursor: pointer;
   float: right;
   font-size: 32px;
-  margin-top: 3px;
-  margin-right: 8px;
-  cursor: pointer;
+  padding: 5px;
+  background: none;
+  border: none;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+#search_box > input {
+  width: 470px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 1em;
+  margin-top: 2px;  /* 상단 위치 보정값 */
 }
 
 
-/* gnb 카테고리 */
-#main_gnb { background: #ccc;}
-#main_gnb .container{
+/* 메인 GNB */
+#main_gnb {
+  background: #ccc;
+}
+#main_gnb .container {
   overflow: hidden;
 }
-#main_gnb button{
+#category_btn {
   font-size: 16px;
   float: left;
-  padding: 15px 40px 15px 20px;
-  background: #666;
+  background: #959595;
+  border: none;
   color: #fff;
-}
-#main_gnb button > i { 
-  margin-right: 1em;
+  font-weight: bold;
+  padding: 15px 40px 15px 20px;
   cursor: pointer;
-  font-size: 1.2em;
 }
-
-#main_gnb ul { 
-  float: left;
-  margin-left: 30px;
+#category_btn > i { 
+  font-size: 24px;
+  margin-right: 14px;
 }
-#main_gnb ul li{
+#category_btn > span { 
   display: inline-block;
+  /* outline: 1px solid red; */
+  transform: translateY(-4px);
 }
-#main_gnb ul li a {
+#main_gnb ul {
+  float: left;
+  margin-left: 20px;
+  height: 55px;
+  /* outline: 1px solid green; */
+}
+#main_gnb ul > li { 
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#main_gnb ul > li > a {
   display: block;
-  padding: 18px 40px 15px 15px;
+  padding: 19px 0px 15px 0px;
+  font-weight: bold;
+}
+
+/* 메인배너 */
+.bx-wrapper{
+  /* bx slider 테두리 제거 */
+  border: none !important;
 }
 
 
-
-#main_banner {
-  position: relative;
-  height: 400px;
-  background: #ff0;
+/* top seller */
+#top_seller {
+  text-align: center;
+  padding: 50px 0;
   overflow: hidden;
+  outline: 1px solid red;
+}
+#top_seller h2 {
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+#top_seller ul > li {
+  outline: 1px solid green;
+  width: 224px;
+  float: left;
+  margin-right: 20px;
+}
+#top_seller ul > li:last-child{ 
+  margin-right: 0;
+}
+#top_seller ul > li img {
+  margin-bottom: 1em;
+  display: block;
+}
+#top_seller ul > li .title {
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+#top_seller ul > li .name {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 0.5em;
+  
+  /* 글자 중략 처리 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-#main_banner img { 
+#top_seller ul > li .origin_price {
+  font-size: 14px;
   display: block;
-  position: absolute;
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
+  color: #999;
+  margin-bottom: 0.5em;
+}
+
+#top_seller ul > li .sale_price {
+
 }
