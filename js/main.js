@@ -4,7 +4,7 @@ $(function(){
   // 상품리스트 추가
   var item_list = $('.item_list'); // 상품 목록 위치
   var list = '';  // 삽입될 html data
-  var list_num = 5;   // 상품목록 개수
+  var list_num = 10;   // 상품목록 개수
   var kwd = '원';
   var origin_price = '';
 
@@ -31,6 +31,12 @@ $(function(){
   $('#category_btn').click(function(){
     $('#category').slideToggle();
   });
+
+  // 다른데 누르면 자동으로 닫히기
+  $('header, section').click(function(){
+    $('#category').slideUp();
+  })  
+
 
   // BX슬라이더
   $('.bx-slider').bxSlider({
