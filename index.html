@@ -16,6 +16,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- bx slider JS -->
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- 상품데이터 -->
+  <script src="js/data.js"></script>
   <!-- 사용자 자바스크립트 -->
   <script src="js/main.js"></script>
 </head>
@@ -69,6 +71,25 @@
     </div><!-- end container -->
   </nav>
 
+  <!-- 카테고리 메뉴 목록 -->
+  <nav id="category">
+    <div class="container"><!-- end container -->
+      <dl>
+        <dt>woman</dt>
+        <dd>outer</dd>
+        <dd>top</dd>
+        <dd>dress</dd>
+        <dd>bottom</dd>
+      </dl>
+      <dl>
+        <dt>man</dt>
+        <dd>outer</dd>
+        <dd>top</dd>
+        <dd>bottom</dd>
+      </dl>
+    </div><!-- end container -->
+  </nav>
+
   <!-- 메인 배너 -->
   <section id="main_banner">
     <div class="inner">
@@ -83,58 +104,19 @@
   <!-- 메인 콘텐츠 -->
   <section id="top_seller">
     <div class="container"><!-- end container-->
-      <h2>TOP top_seller</h2>
+      <h2>TOP SELLER</h2>
       <ul class="item_list">
-        <li>
+        <!-- 여기에 자바스크립트로 상품목록 추가됨 -->
+        <!-- 225 x 323 -->
+        <!-- <li>
           <a href="#">
-            <!-- 225 x 323 -->
             <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
             <span class="title">EGOIST</span>
             <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
             <del class="origin_price">368,000원</del>
             <ins class="sale_price"><strong>214,800원</strong></ins>
           </a>
-        </li>
-        <li>
-          <a href="#">
-            <!-- 225 x 323 -->
-            <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
-            <span class="title">EGOIST</span>
-            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
-            <del class="origin_price">368,000원</del>
-            <ins class="sale_price"><strong>214,800원</strong></ins>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <!-- 225 x 323 -->
-            <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
-            <span class="title">EGOIST</span>
-            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
-            <del class="origin_price">368,000원</del>
-            <ins class="sale_price"><strong>214,800원</strong></ins>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <!-- 225 x 323 -->
-            <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
-            <span class="title">EGOIST</span>
-            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
-            <del class="origin_price">368,000원</del>
-            <ins class="sale_price"><strong>214,800원</strong></ins>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <!-- 225 x 323 -->
-            <img src="http://placehold.it/225x323" alt="노카라 트위드 자켓">
-            <span class="title">EGOIST</span>
-            <span class="name">라글란 루즈핏 반핸드메이드 코트 PK4HC087</span>
-            <del class="origin_price">368,000원</del>
-            <ins class="sale_price"><strong>214,800원</strong></ins>
-          </a>
-        </li>
+        </li> -->
       </ul>
     </div><!-- end container-->
   </section>
@@ -155,18 +137,10 @@
               <li>#블랙쿠션</li>
               <li>#럭셔리</li>
             </ul>
-          </a>
-        </li>
-        <li>
-          <!-- 이미지는 배경으로 처리 -->
-          <a href="#">
-            <span class="title">Laurel</span>
-            <i class="far fa-heart"></i>
-            <ul class="hash_tag">
-              <li>#크림스킨</li>
-              <li>#굿모닝 피부</li>
-              <li>#블랙쿠션</li>
-              <li>#럭셔리</li>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>라네즈 홀리데이 콜렉션</h4></li>
+              <li class="day">11.18~12.31</li>
             </ul>
           </a>
         </li>
@@ -181,8 +155,32 @@
               <li>#블랙쿠션</li>
               <li>#럭셔리</li>
             </ul>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>라네즈 홀리데이 콜렉션</h4></li>
+              <li class="day">11.18~12.31</li>
+            </ul>
           </a>
         </li>
+        <li>
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <span class="title">Laurel</span>
+            <i class="far fa-heart"></i>
+            <ul class="hash_tag">
+              <li>#크림스킨</li>
+              <li>#굿모닝 피부</li>
+              <li>#블랙쿠션</li>
+              <li>#럭셔리</li>
+            </ul>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>라네즈 홀리데이 콜렉션</h4></li>
+              <li class="day">11.18~12.31</li>
+            </ul>
+          </a>
+        </li>
+
       </ul>
     </div><!-- end container -->
   </section>

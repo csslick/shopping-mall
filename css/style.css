@@ -23,7 +23,7 @@ body {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 
@@ -81,7 +81,7 @@ body {
 
 /* 메인 GNB */
 #main_gnb {
-  background: #ccc;
+  /* background: #ccc; */
 }
 #main_gnb .container {
   overflow: hidden;
@@ -89,7 +89,8 @@ body {
 #category_btn {
   font-size: 16px;
   float: left;
-  background: #959595;
+  /* 브랜드 메인 컬러 */
+  background: #e51b23;
   border: none;
   color: #fff;
   font-weight: bold;
@@ -132,9 +133,10 @@ body {
 #main_banner .inner{
   width: 1920px; height: 400px;
   position: absolute;
+  /* 중앙정렬 */
   left: 50%; top: 50%;
   transform: translate(-50%, -50%);
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* bx slider 테두리 제거 */
@@ -153,14 +155,14 @@ body {
   text-align: center;
   padding: 50px 0;
   overflow: hidden;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 #top_seller h2 {
   margin-bottom: 50px;
   font-size: 24px;
 }
 #top_seller ul > li {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   width: 224px;
   float: left;
   margin-right: 20px;
@@ -213,6 +215,7 @@ body {
   font-size: 24px;  
 }
 #brand .container > ul > li {
+  position: relative;
   outline: 1px solid green;
   width: 386.66px;
   height: 465px;
@@ -239,4 +242,82 @@ body {
   /* 이미지 높이값: 340px */
   background-image: url("http://placeimg.com/387/340/3");
   background-repeat: no-repeat;
+}
+
+/* 브랜드 배너 텍스트 배치 */
+#brand .container > ul > li > a {
+  color: #fff;
+}
+#brand .container > ul > li .title {
+  position: absolute;
+  font-size: 32px;
+  left: 30px; top: 30px;
+}
+#brand .container > ul > li i {
+  position: absolute;
+  right: 30px; top: 30px;
+  font-size: 48px;
+  text-shadow: 1px 1px 2px rgba(0,0,0, 0.6);
+}
+#brand .container .hash_tag {
+  position: absolute;
+  left: 30px; bottom: 140px;
+  text-align: left;
+}
+#brand .container .hash_tag > li {
+  width: auto;
+  margin-bottom: 8px;
+  padding: 10px;
+  background:rgba(0,0,0, 0.4);
+  display: inline-block;
+
+}
+#brand .container .text {
+  position: absolute;
+  width: 100%;
+  left: 0; bottom: 0;
+  color: #444;
+  text-align: center;
+  outline: 1px solid red;
+  margin-bottom: 20px;
+}
+#brand .container .text > li {
+  line-height: 1.8em;
+}
+#brand .container .text .subject {
+  border: 1px solid #444;
+  width: 5em;
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+#brand .container .text .day {
+  color: #666;
+}
+#brand .container .text h4 {
+  font-size: 20px;
+}
+
+
+/* 카테고리 메뉴 */
+#category {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  z-index: 99;
+  display: none;
+}
+#category dl {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  text-transform: uppercase; /* 대문자 */
+  line-height: 2em;
+}
+#category dl dt {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 3px solid #444;
 }
