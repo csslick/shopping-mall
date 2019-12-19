@@ -217,12 +217,14 @@ body {
 }
 #brand .container > ul > li {
   position: relative;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   width: 386.66px;
   height: 465px;
   float: left;
   margin-right: 20px;
   padding-bottom: 20px; 
+  background: #efefef;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 #brand ul > li:last-child{ 
   margin-right: 0;
@@ -279,7 +281,7 @@ body {
   left: 0; bottom: 0;
   color: #444;
   text-align: center;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin-bottom: 20px;
 }
 #brand .container .text > li {
