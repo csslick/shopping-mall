@@ -201,7 +201,7 @@ body {
 }
 
 #top_seller ul > li .sale_price {
-
+  text-decoration: none;
 }
 
 
