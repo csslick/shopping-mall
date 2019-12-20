@@ -16,13 +16,11 @@ function show_product(category_name) {
     }
     buff.push(product_data[i]);
   }
-  console.log('buff 길이 ', buff.length);
+  // console.log('buff 길이 ', buff.length);
 
   if(list_num > buff.length) list_num = buff.length;
 
   for(var i = 0; i < list_num; i++) {
-    console.log(buff[i].img_url);    
-
     list += '<li>';
     list += '<a href="#">';
     list += '<img src="' + buff[i].img_url + '">';
