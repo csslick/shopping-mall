@@ -8,77 +8,88 @@ var product_data = [
     title: "EGOIST",
     name: "날개사 볼륨소매 풀오버 EK4KL065",
     origin_price: "268,000",
-    sale_price: "178,800"
+    sale_price: "178,800",
+    category: "woman",
   },
   {
-    img_url: "http://placehold.it/225x323&text=2",
+    img_url: "http://placehold.it/225x323&text=2woman",
     title: "제품 브랜드명2",
     name: "제품명2",
     origin_price: "368,000",
-    sale_price: "214,800"
+    sale_price: "214,800",
+    category: "woman",
   },
   {
-    img_url: "http://placehold.it/225x323&text=3",
+    img_url: "http://placehold.it/225x323&text=3woman",
     title: "제품 브랜드명3",
     name: "제품명3",
     origin_price: "368,000",
-    sale_price: "214,800"
+    sale_price: "214,800",
+    category: "woman",
   },
   {
-    img_url: "http://placehold.it/225x323&text=4",
+    img_url: "http://placehold.it/225x323&text=4woman",
     title: "제품 브랜드명4",
     name: "제품명4",
     origin_price: "368,000",
-    sale_price: "214,800"
+    sale_price: "214,800",
+    category: "woman",
   },
   {
-    img_url: "http://placehold.it/225x323&text=5",
+    img_url: "http://placehold.it/225x323&text=5man",
     title: "제품 브랜드명5",
     name: "제품명5",
     origin_price: "368,000",
-    sale_price: "214,800"
+    sale_price: "214,800",
+    category: "man",
   },
   {
-    img_url: "http://placehold.it/225x323&text=6",
+    img_url: "http://placehold.it/225x323&text=6man",
     title: "제품 브랜드명6",
     name: "제품명6",
     origin_price: "368,000",
-    sale_price: "214,800"
+    sale_price: "214,800",
+    category: "man",
   },
   {
-    img_url: "http://placehold.it/225x323&text=7",
+    img_url: "http://placehold.it/225x323&text=7man",
     title: "제품 브랜드명7",
     name: "제품명7",
     origin_price: "368,000",
-    sale_price: "214,800"
+    sale_price: "214,800",
+    category: "man",
   },
   {
     img_url: "images/item008.jpg",
     title: "pokemon",
     name: "pikachu",
     origin_price: "10,000,000",
-    sale_price: "9,999,900"
+    sale_price: "9,999,900",
+    category: "monster",
   },
   {
-    img_url: "http://placehold.it/225x323&text=9",
+    img_url: "http://placehold.it/225x323&text=9man",
     title: "제품 브랜드명9",
     name: "제품명9",
     origin_price: "368,000",
-    sale_price: "214,800"
+    sale_price: "214,800",
+    category: "man",
   },  
   {
-    img_url: "http://placehold.it/225x323&text=10",
+    img_url: "http://placehold.it/225x323&text=10woman",
     title: "제품 브랜드명10",
     name: "제품명10",
     origin_price: "368,000",
-    sale_price: "214,800"
+    sale_price: "214,800",
+    category: "woman",
   },  
   {
-    img_url: "http://placehold.it/225x323&text=11",
+    img_url: "http://placehold.it/225x323&text=11man",
     title: "제품 브랜드명11",
     name: "제품명11",
     origin_price: "368,000",
-    sale_price: "214,800"
+    sale_price: "214,800",
+    category: "man",
   },  
 ];
 
