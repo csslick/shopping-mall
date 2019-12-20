@@ -340,3 +340,13 @@ body {
   font-weight: bold;
   border-bottom: 3px solid #444;
 }
+
+/* 탑 셀러 카테고리 메뉴 */
+#top_seller .category_menu {
+  margin-top: -25px;
+  margin-bottom: 50px;
+}
+#top_seller .category_menu a {
+  margin: 0 20px;
+  font-size: 14px;
+}

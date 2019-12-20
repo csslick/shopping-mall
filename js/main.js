@@ -57,6 +57,15 @@ $(function(){
     $('#category').slideUp();
   })  
 
+  // TOP SELLER 상품 카테고리 변경(ALL | WOMAN | MAN)
+  $('.category_menu > a').click(function(){
+    console.log($(this).index());
+    var idx = $(this).index();
+    // var btn = 
+    // show_product
+    return false;
+  });
+
 
   // BX슬라이더
   $('.bx-slider').bxSlider({
