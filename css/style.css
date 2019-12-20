@@ -10,6 +10,7 @@ a{
   color: #444;
 }
 body {
+  background: #fff;
   color: #444;
   font-size: 100%;
   font-family: 'Nanum Gothic', sans-serif;
@@ -143,6 +144,7 @@ body {
 /* bx slider 테두리 제거 */
 .bx-wrapper{
   border: none !important;
+  box-shadow: none !important;
 }
 
 /* 인디케이터 위치 조정 */
@@ -216,48 +218,61 @@ body {
   margin-bottom: 50px;
   font-size: 24px;  
 }
-#brand .container > ul > li {
+#brand .container ul.brand-slider > li > a {
+  display: block;
+  height: 465px;
+  /* outline: 1px solid red; */
+  color: #fff;
+}
+
+#brand .container .bx-viewport{
+  /* outline: 1px solid red; */
+}
+#brand .container ul.brand-slider > li {
   position: relative;
   /* outline: 1px solid green; */
-  width: 386.66px;
+  width: 386.66px !important;
   height: 465px;
   float: left;
   margin-right: 20px;
   padding-bottom: 20px; 
   background: #efefef;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+  border: 1px solid #ddd;
 }
-#brand ul > li:last-child{ 
+#brand ul.brand-slider > li:last-child{ 
   margin-right: 0;
 }
 
 /* 브랜드 목록 배경이미지 */
-#brand > .container > ul > li:nth-child(1) {
+#brand ul.brand-slider > li[data-num='1'] {
   /* 이미지 높이값: 340px */
   background-image: url("http://placeimg.com/387/340/1");
   background-repeat: no-repeat;
 }
-#brand > .container > ul > li:nth-child(2) {
-  /* 이미지 높이값: 340px */
+#brand ul.brand-slider > li[data-num='2'] {
   background-image: url("http://placeimg.com/387/340/2");
   background-repeat: no-repeat;
 }
-#brand > .container > ul > li:nth-child(3) {
-  /* 이미지 높이값: 340px */
+#brand ul.brand-slider > li[data-num='3'] {
   background-image: url("http://placeimg.com/387/340/3");
+  background-repeat: no-repeat;
+}
+#brand ul.brand-slider > li[data-num='4'] {
+  background-image: url("http://placeimg.com/387/340/4");
   background-repeat: no-repeat;
 }
 
 /* 브랜드 배너 텍스트 배치 */
-#brand .container > ul > li > a {
+#brand .container ul.brand-sliderl > li > a {
   color: #fff;
 }
-#brand .container > ul > li .title {
+#brand .container ul.brand-slider > li .title {
   position: absolute;
   font-size: 32px;
   left: 30px; top: 30px;
 }
-#brand .container > ul > li i {
+#brand .container ul.brand-slider > li i {
   position: absolute;
   right: 30px; top: 30px;
   font-size: 48px;

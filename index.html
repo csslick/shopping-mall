@@ -11,11 +11,11 @@
   <!-- FontAwesome(폰트 아이콘) -->
   <script src="https://kit.fontawesome.com/42bc809b80.js" crossorigin="anonymous"></script>
   <!-- bx slider CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="js/bxslider/jquery.bxslider.min.css">
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- bx slider JS -->
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="js/bxslider/jquery.bxslider.min.js"></script>
   <!-- 상품데이터 -->
   <script src="js/data.js"></script>
   <!-- 사용자 자바스크립트 -->
@@ -125,8 +125,8 @@
   <section id="brand">
     <div class="container"><!-- end container -->
       <h2>브랜드 추천</h2>
-      <ul>
-        <li>
+      <ul class="brand-slider">
+        <li data-num="1">
           <!-- 이미지는 배경으로 처리 -->
           <a href="#">
             <span class="title">Laurel</span>
@@ -144,7 +144,7 @@
             </ul>
           </a>
         </li>
-        <li>
+        <li data-num="2">
           <!-- 이미지는 배경으로 처리 -->
           <a href="#">
             <span class="title">Laurel</span>
@@ -162,7 +162,7 @@
             </ul>
           </a>
         </li>
-        <li>
+        <li data-num="3">
           <!-- 이미지는 배경으로 처리 -->
           <a href="#">
             <span class="title">Laurel</span>
@@ -180,7 +180,24 @@
             </ul>
           </a>
         </li>
-
+        <li data-num="4">
+          <!-- 이미지는 배경으로 처리 -->
+          <a href="#">
+            <span class="title">Laurel</span>
+            <i class="far fa-heart"></i>
+            <ul class="hash_tag">
+              <li>#크림스킨</li>
+              <li>#굿모닝 피부</li>
+              <li>#블랙쿠션</li>
+              <li>#럭셔리</li>
+            </ul>
+            <ul class="text">
+              <li class="subject">이벤트</li>
+              <li><h4>라네즈 홀리데이 콜렉션</h4></li>
+              <li class="day">11.18~12.31</li>
+            </ul>
+          </a>
+        </li>
       </ul>
     </div><!-- end container -->
   </section>

@@ -50,4 +50,15 @@ $(function(){
     responsive: false,
   });
 
-});
+  $('.brand-slider').bxSlider({
+    // 여기에 옵션 설정
+    pager: false,           // 하단 인디케이터 표시/비표시
+    responsive: false,
+    slideWidth: 1200,
+    minSlides: 3,
+    maxSlides: 3,
+    moveSlides: 1,
+  });  
+
+
+}); // end$
