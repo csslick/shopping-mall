@@ -154,38 +154,45 @@ body {
 
 
 /* top seller */
-#top_seller {
+#top_seller, #new_product {
   text-align: center;
   padding: 50px 0;
   overflow: hidden;
   /* outline: 1px solid red; */
 }
-#top_seller h2 {
+#top_seller h2, #new_product h2{
   margin-bottom: 50px;
   font-size: 24px;
 }
-#top_seller ul > li {
-  /* outline: 1px solid green; */
+
+#new_product ul {
+  overflow: hidden;
+}
+#top_seller ul > li, #new_product ul > li {
   width: 224px;
   float: left;
   margin-right: 20px;
   padding-bottom: 20px;
   margin-bottom: 40px;
 }
-#top_seller ul > li:nth-child(5n){ 
+#top_seller ul > li:nth-child(5n),
+#new_product ul > li:nth-child(5n){ 
   margin-right: 0;
 }
-#top_seller ul > li img {
+#top_seller ul > li img,
+#new_product ul > li img {
   margin-bottom: 1em;
   display: block;
 }
-#top_seller ul > li .title {
+#top_seller ul > li .title,
+#new_product ul > li .title {
   font-size: 14px;
   display: block;
   font-weight: bold;
   margin-bottom: 1.5em;
 }
-#top_seller ul > li .name {
+#top_seller ul > li .name, 
+#new_product ul > li .name{
   font-size: 14px;
   display: block;
   margin-bottom: 0.5em;
@@ -196,15 +203,27 @@ body {
   text-overflow: ellipsis;
 }
 
-#top_seller ul > li .origin_price {
+#top_seller ul > li .origin_price, 
+#new_product ul > li .origin_price{
   font-size: 14px;
   display: block;
   color: #999;
   margin-bottom: 0.5em;
 }
 
-#top_seller ul > li .sale_price {
+#top_seller ul > li .sale_price, 
+#new_product ul > li .sale_price{
   text-decoration: none;
+}
+
+/* 탑 셀러 카테고리 메뉴 */
+#top_seller .category_menu {
+  margin-top: -25px;
+  margin-bottom: 50px;
+}
+#top_seller .category_menu a {
+  margin: 0 20px;
+  font-size: 14px;
 }
 
 
@@ -341,12 +360,3 @@ body {
   border-bottom: 3px solid #444;
 }
 
-/* 탑 셀러 카테고리 메뉴 */
-#top_seller .category_menu {
-  margin-top: -25px;
-  margin-bottom: 50px;
-}
-#top_seller .category_menu a {
-  margin: 0 20px;
-  font-size: 14px;
-}
