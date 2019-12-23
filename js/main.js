@@ -33,6 +33,7 @@ function show_product(el, category_name, list_num) {
 
     list += '<del class="origin_price">' + origin_price + kwd + '</del>';
     list += '<ins class="sale_price"><strong>' + buff[i].sale_price + '원</strong></ins>';
+    list += '</a></li>'
   }
 
   item_list.empty();
